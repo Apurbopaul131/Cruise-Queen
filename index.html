@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curise Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    <section id="main-section" class="main-section">
+        <header class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!--Booking Section-->
+        <main class="main-content container">
+    
+            <div class="booking-content">
+                <h1>Cruise Queen</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+    
+    
+            <div class="booking-form">
+                <h3>Book Ocean Time</h3>
+                <div class="input-group">
+                    <label for="">Flying From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
+                </div>
+                <div class="input-group">
+                    <label for="">Flying To</label>
+                    <input class="inp-style" type="text" name="" placeholder="New York, United States">
+                </div>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                        <input class="inp-style" type="date" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Return</label>
+                        <input class="inp-style" type="date" name="">
+                    </div>
+                </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <input id="firstClass-input" class="inp-style inp-width" type="number" name="" value="1">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <p> <span id="firstClass-plus" class="button-cursor">+</span> <span id="firstClass-minus" class="button-cursor">-</span></p>
+                    </div>
+                </div>
+                
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">Economy ($100)</label>
+                        <input id="economy-input" class="inp-style inp-width" type="number" name="" value="1">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <p> <span id="economy-plus" class="button-cursor">+</span> <span id="economy-minus" class="button-cursor">-</span> </p>
+                    </div>
+                </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p id="subtotal">$250</p>
+                        </div>
+                    </div>
+    
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p id="vat">$25</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p id="total">$275</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="book-button" class="btn-style">Book Now</button>
+            </div>
+        </main>
+    
+    </section>
+    <section id="product-clip">
+        <div class="row">
+           <div class="col col-md-8 text-center">
+               <h3>Your order details</h3>
+               <div class="table-div">
+                 <table>
+                    <tr>
+                       <td><b>Ticket Class</b></td>
+                       <td><b>Number of Ticket</b></td>
+                       <td><b>price</b></td>
+                     </tr>
+                     
+                     <tr>
+                       <td>First Class</td>
+                       <td id="number-first">1</td>
+                       <td>$ <span id="first-price">150</span> </td>
+                     </tr>
+                     <tr>
+                       <td>economy class</td>
+                       <td id="number-economy">1</td>
+                       <td>$<span id="economy-price">100</span> </td>
+                     </tr>
+                    </table>
+               </div>
+               
+           </div>
+           <div class="col col-md-4">
+              <h3>Total payable amount</h3>
+              <div class="row payable-div">
+                 <div class="col col-md-6">
+                    <h5>Subtotal</h5>
+                    <h5>Tax:</h5>
+                    <h5>Total:</h5>
+                 </div>
+                 <div class="col col-md-6">
+                    <h5 id="proceed-subtotal">$250</h5>
+                    <h5 id="proceed-tax">$25</h5>
+                    <h5 id="proceed-total">$275</h5>
+                    <button type="button" id="proceed-btn" class="btn btn-success check-out mr-5 mt-3">proceed</button>
+                 </div>
+              </div>
+           </div>
+        </div>
+  
+     </section>
+
+    <!--Thank You-->
+
+    <!-- add script.js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
